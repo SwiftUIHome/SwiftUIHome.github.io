@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>SwiftUI入门HelloWorld程序</title>
+    <link href="/2023/11/11/SwiftUI%E5%85%A5%E9%97%A8HelloWorld/"/>
+    <url>/2023/11/11/SwiftUI%E5%85%A5%E9%97%A8HelloWorld/</url>
+    
+    <content type="html"><![CDATA[<p>使用SwiftUI编写一个简单的 “Hello World” 应用程序非常直接。以下是一个基本示例：</p><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs swift"><span class="hljs-keyword">import</span> SwiftUI<br><br><span class="hljs-keyword">struct</span> <span class="hljs-title class_">ContentView</span>: <span class="hljs-title class_">View</span> &#123;<br>    <span class="hljs-keyword">var</span> body: <span class="hljs-keyword">some</span> <span class="hljs-type">View</span> &#123;<br>        <span class="hljs-type">Text</span>(<span class="hljs-string">&quot;Hello, World!&quot;</span>)<br>            .padding()<br>    &#125;<br>&#125;<br><br><span class="hljs-keyword">@main</span><br><span class="hljs-keyword">struct</span> <span class="hljs-title class_">HelloWorldApp</span>: <span class="hljs-title class_">App</span> &#123;<br>    <span class="hljs-keyword">var</span> body: <span class="hljs-keyword">some</span> <span class="hljs-type">Scene</span> &#123;<br>        <span class="hljs-type">WindowGroup</span> &#123;<br>            <span class="hljs-type">ContentView</span>()<br>        &#125;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure><p>这段代码的解释如下：</p><ol><li><p><strong>导入SwiftUI框架</strong>：<code>import SwiftUI</code> 这行代码导入了SwiftUI框架，使您能够使用其提供的各种UI组件。</p></li><li><p><strong>定义ContentView</strong>：<code>struct ContentView: View</code> 这行定义了一个名为 <code>ContentView</code> 的新结构体，它遵循 <code>View</code> 协议。在SwiftUI中，您创建的每个用户界面组件都是一个遵循 <code>View</code> 协议的结构体。</p></li><li><p><strong>定义视图的内容</strong>：在 <code>ContentView</code> 结构体中，<code>body</code> 属性定义了视图的内容。在这个例子中，它只是一个显示文本 “Hello, World!” 的 <code>Text</code> 视图。</p></li><li><p><strong>添加填充</strong>：<code>.padding()</code> 修饰符为 <code>Text</code> 视图添加了一些内边距，让文本看起来不那么拥挤。</p></li><li><p><strong>定义应用程序的入口点</strong>：<code>@main struct HelloWorldApp: App</code> 这行定义了应用程序的主结构体。这是SwiftUI应用的入口点。</p></li><li><p><strong>定义应用程序的场景</strong>：在 <code>HelloWorldApp</code> 结构体中，<code>body</code> 属性返回一个场景，这个场景包含了 <code>ContentView</code>。<code>WindowGroup</code> 是用于创建应用程序界面的容器。</p></li></ol><p>将此代码放入SwiftUI项目中的相应文件即可运行一个基本的 “Hello World” 应用程序。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>SwiftUI</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>SwiftUI,HelloWorld</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  
+</search>
